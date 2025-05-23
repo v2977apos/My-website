@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EPIC PRODUCTIONS</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    header {
+      background: #ff4500;
+      padding: 30px 20px;
+      box-shadow: 0 5px 15px rgba(255, 69, 0, 0.7);
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: white;
+      user-select: none;
+    }
+
+    .buttons {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #ff6f00;
+      padding: 12px 28px;
+      border-radius: 30px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 8px #ff6f0040;
+      transition: background 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      background: #ffa000;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px #ffa00080;
+    }
+
+    .car-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 40px auto 0;
+      padding: 0 15px;
+    }
+
+    .car {
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .car:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(255, 111, 0, 0.7);
+    }
+
+    .car img {
+      width: 100%;
+      display: block;
+      border-bottom: 3px solid #ff6f00;
+      object-fit: cover;
+      height: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .car:hover img {
+      transform: scale(1.1);
+    }
+
+    .car h2 {
+      margin: 15px 0 10px;
+      color: #ff6f00;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .specs {
+      font-size: 16px;
+      color: #ddd;
+      padding: 0 20px 20px;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    .specs ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      background: #111;
+      padding: 20px 10px;
+      color: #bbb;
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #ff6f00;
+      font-weight: 600;
+      text-decoration: none;
+      margin-left: 5px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ffa000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>EPIC PRODUCTIONS</header>
+
+  <div class="buttons">
+    <a href="https://www.instagram.com/epic_productions07" target="_blank" class="btn">
+      Instagram
+    </a>
+    <a href="tel:2763526272" class="btn">
+      Call Us
+    </a>
+  </div>
+
+  <div class="car-container">
+    <div class="car" onclick="window.open('https://cdn.pixabay.com/photo/2017/09/25/13/12/auto-2789794_1280.jpg', '_blank')">
+      <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/auto-2789794_1280.jpg" alt="Lamborghini Aventador" />
+      <h2>Lamborghini Aventador</h2>
+      <div class="specs">
+        <ul>
+          <li>Engine: 6.5L V12</li>
+          <li>Horsepower: 770 HP</li>
+          <li>Top Speed: 350 km/h</li>
+          <li>0-100 km/h: 2.9 seconds</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car" onclick="window.open('https://cdn.pixabay.com/photo/2018/03/01/14/40/car-3196887_1280.jpg', '_blank')">
+      <img src="https://cdn.pixabay.com/photo/2018/03/01/14/40/car-3196887_1280.jpg" alt="Bugatti Chiron" />
+      <h2>Bugatti Chiron</h2>
+      <div class="specs">
+        <ul>
+          <li>Engine: 8.0L Quad-Turbo W16</li>
+          <li>Horsepower: 1500 HP</li>
+          <li>Top Speed: 420 km/h</li>
+          <li>0-100 km/h: 2.4 seconds</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car" onclick="window.open('https://cdn.pixabay.com/photo/2016/11/29/03/53/audi-1866968_1280.jpg', '_blank')">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/audi-1866968_1280.jpg" alt="Audi R8" />
+      <h2>Audi R8 V10</h2>
+      <div class="specs">
+        <ul>
+          <li>Engine: 5.2L V10</li>
+          <li>Horsepower: 602 HP</li>
+          <li>Top Speed: 330 km/h</li>
+          <li>0-100 km/h: 3.3 seconds</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car" onclick="window.open('https://cdn.pixabay.com/photo/2020/05/11/08/31/ferrari-5157528_1280.jpg', '_blank')">
+      <img src="https://cdn.pixabay.com/photo/2020/05/11/08/31/ferrari-5157528_1280.jpg" alt="Ferrari SF90 Stradale" />
+      <h2>Ferrari SF90 Stradale</h2>
+      <div class="specs">
+        <ul>
+          <li>Engine: 4.0L Twin-Turbo V8 + Electric</li>
+          <li>Horsepower: 986 HP</li>
+          <li>Top Speed: 340 km/h</li>
+          <li>0-100 km/h: 2.5 seconds</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 EPIC PRODUCTIONS | Follow us on 
+    <a href="https://www.instagram.com/epic_productions07" target="_blank">@epic_productions07</a> | 
+    Call us: <a href="tel:789*******">789*******</a>
+  </footer>
+
+</body>
+</html>
